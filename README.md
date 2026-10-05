@@ -85,3 +85,9 @@ sed 's#https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master#htt
 - **规则集拉不下来**：换 jsDelivr 版本，或者先连上代理再刷新配置
 - **节点没被地区组抓到**：机场节点名可能用了别的写法，在 `[Proxy Group]` 里对应地区的 `policy-regex-filter` 加上关键词
 - **银行 App 报网络异常**：把域名加进开头的直连规则，或者临时关掉代理
+
+## Clash Verge Rev 住宅 IP 链式代理脚本
+
+`ClashVergeRev-Residential-Chain.js` 是给电脑端 Clash Verge Rev 用的全局扩展脚本，链路是「本机 → 机场节点 → 美国住宅代理 → 目标网站」，分流用 Loyalsoldier 规则。
+
+用法：Clash Verge Rev →「订阅」→「全局扩展脚本」→ 编辑，把文件内容整个贴进去，填上住宅代理的 IP、用户名、密码后保存。仓库里的文件只有占位符，账号密码不要提交上来。
